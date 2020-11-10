@@ -152,7 +152,7 @@ class FadeDotsIndicator @JvmOverloads constructor(
         fun addOnPageChangeListener()
     }
 
-    // PUBLIC METHODS
+    // 传入ViewPager2对象，监听viewPager2的页面切换来控制指示器的切换
     fun setViewPager2(viewPager2: ViewPager2) {
         if (viewPager2.adapter == null) {
             throw IllegalStateException(
